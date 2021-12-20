@@ -1,0 +1,18 @@
+import discord
+from discord.ext import commands
+import statcord,os
+
+class Statcord(commands.Cog):
+
+    def __init__(self,client):
+        self.client = client
+        self.key = os.getenv("statkey")
+        self.api = statcord.Client(self.client,self.key)
+        self.api.start_loop()
+
+    @commands.Cog.listener()
+    async def on_command(self,ctx):
+        self.api.command_run(ctx)
+
+def setup(client):
+    client.add_cog(Statcord(client))

@@ -1,0 +1,4 @@
+2021-12-20 15:36:34,903: WARNING: discord.client: PyNaCl is not installed, voice will NOT be supported
+2021-12-20 15:36:35,284: INFO: discord.client: logging in using static token
+2021-12-20 15:36:35,625: INFO: discord.gateway: Shard ID None has sent the IDENTIFY payload.
+2021-12-20 15:36:35,804: INFO: discord.gateway: Shard ID None has connected to Gateway: ["gateway-prd-main-gscr",{"micros":96240,"calls":["discord-sessions-green-prd-2-29",{"micros":94635,"calls":["start_session",{"micros":65768,"calls":["api-prd-main-00gv",{"micros":61686,"calls":["get_user",{"micros":7018},"add_authorized_ip",{"micros":4216},"get_guilds",{"micros":11891},"coros_wait",{"micros":2}]}]},"guilds_connect",{"micros":2,"calls":[]},"presence_connect",{"micros":0,"calls":[]}]}]}] (Session ID: 3019b6cf06ae0a674ddcf1674b62a954).
