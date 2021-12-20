@@ -2,8 +2,6 @@ import discord
 from discord.ext import commands,tasks
 import logging,os,json
 from itertools import cycle
-from flask import Flask
-from threading import Thread
 
 logger = logging.getLogger("discord")
 logger.setLevel(logging.INFO)
@@ -51,18 +49,8 @@ async def change_status():
 async def on_ready():
     change_status.start()
 
-app = Flask("")
-@app.route("/")
-def home():
-    return "Loop"
-def run():
-    app.run(host="0.0.0.0",port=8080)
-def ping():
-    Thread(target=run).start()
-
 for filename in os.listdir("./cogs"):
     if filename.endswith(".py"):
         client.load_extension(f"cogs.{filename[:-3]}")
 
-ping()
 client.run(os.getenv("key"))
