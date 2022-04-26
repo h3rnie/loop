@@ -1,2 +1,1 @@
-# loop-alpha
-Deprecated
+#DEPRECATED until further notice
