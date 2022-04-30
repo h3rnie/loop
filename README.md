@@ -1,1 +1,0 @@
-# DEPRECATED until further notice
