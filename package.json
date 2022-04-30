@@ -1,32 +1,32 @@
 {
-  "dependencies": {
-    "discord.js": "^13.6.0",
-    "prettier": "^2.6.2"
-  },
-  "name": "loop",
-  "version": "1.0.0",
-  "description": "A discord bot.",
-  "private": false,
-  "main": "index.js",
-  "scripts": {},
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/h3rnie/loop.git"
-  },
-  "keywords": [
-    "Discord"
-  ],
-  "author": "Hernie",
-  "license": "AGPL-3.0-or-later",
-  "bugs": {
-    "url": "https://github.com/h3rnie/loop/issues"
-  },
-  "homepage": "https://github.com/h3rnie/loop#readme",
-  "devDependencies": {
-    "eslint": "^8.14.0",
-    "eslint-config-standard": "^17.0.0",
-    "eslint-plugin-import": "^2.26.0",
-    "eslint-plugin-n": "^15.2.0",
-    "eslint-plugin-promise": "^6.0.0"
-  }
+    "dependencies": {
+        "discord.js": "^13.6.0",
+        "prettier": "^2.6.2"
+    },
+    "name": "loop",
+    "version": "1.0.0",
+    "description": "A discord bot.",
+    "private": false,
+    "main": "index.js",
+    "scripts": {},
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/h3rnie/loop.git"
+    },
+    "keywords": [
+        "Discord"
+    ],
+    "author": "Hernie",
+    "license": "AGPL-3.0-or-later",
+    "bugs": {
+        "url": "https://github.com/h3rnie/loop/issues"
+    },
+    "homepage": "https://github.com/h3rnie/loop#readme",
+    "devDependencies": {
+        "eslint": "^8.14.0",
+        "eslint-config-standard": "^17.0.0",
+        "eslint-plugin-import": "^2.26.0",
+        "eslint-plugin-n": "^15.2.0",
+        "eslint-plugin-promise": "^6.0.0"
+    }
 }
