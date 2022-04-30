@@ -1,1 +1,2 @@
-# DEPRECATED until further notice
+# DEPRECATED
+## Loop of Hernie in discord.py
