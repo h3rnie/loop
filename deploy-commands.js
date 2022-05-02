@@ -15,22 +15,15 @@ for (const file of commandFiles) {
 
 const rest = new REST({ version: "9" }).setToken(process.env.TOKEN);
 
-(async () => {
-    try {
-        console.log("Started refreshing application (/) commands.");
-
-        await rest.put(
-            Routes.applicationGuildCommands(
-                "895930131175075870",
-                "908659536125116466"
-            ),
-            {
-                body: commands,
-            }
-        );
-
-        console.log("Successfully reloaded application (/) commands.");
-    } catch (error) {
-        console.error(error);
-    }
-})();
+for (i in commands)
+    console.log(commands[i]),
+    rest.put(
+        Routes.applicationGuildCommands(
+            process.env.CLIENTID,
+            process.env.GUILDID
+        ),
+        { body: commands[i] }
+    ).then(() =>
+        console.log("REG STAR")
+    )
+    .catch(console.error);

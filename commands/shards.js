@@ -2,7 +2,7 @@ const { SlashCommandBuilder } = require("@discordjs/builders");
 
 module.exports = {
     data: new SlashCommandBuilder()
-        .setName("ping")
+        .setName("shards")
         .setDescription("WebSocket Shard Connection"),
     async execute(interaction) {
         const sock = interaction.client.ws;
@@ -22,8 +22,9 @@ module.exports = {
         if (sock.shards.size == 1) {
             no = "";
         }
-        await interaction.reply(
-            `${sock.shards.size} shard${no} currently ${status} through ${sock.gateway}`
-        );
+        await interaction.reply({
+            content: `${sock.shards.size} shard${no} currently ${status} through ${sock.gateway}`,
+            ephemeral: true,
+        });
     },
 };
